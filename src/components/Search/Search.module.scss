@@ -1,0 +1,27 @@
+.search {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  margin: 10rem 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50rem;
+  width: 100%;
+}
+
+.github-logo {
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  margin: 1rem 0 2rem 0;
+}
+
+.alert {
+  margin-top: 10rem !important;
+}

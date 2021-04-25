@@ -1,0 +1,19 @@
+.alert {
+  margin: 2rem;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  border: 1px solid var(--color-dark);
+  line-height: 1.5;
+
+  &--success {
+    border-color: var(--color-green);
+    color: var(--color-green);
+    background-color: #f7fcf8;
+  }
+
+  &--error {
+    border-color: var(--color-red);
+    color: var(--color-red);
+    background-color: #fff6f6;
+  }
+}

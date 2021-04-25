@@ -1,0 +1,49 @@
+@import '../../assets/styles/abstract/mixins';
+
+.toast {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  background-color: red;
+  padding: 1rem;
+  border: 1px solid var(--color-dark);
+  max-width: 40rem;
+  border-radius: 0.5rem;
+  transform: translateY(2rem) scale(0.9);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+
+  @include respond(sm) {
+    left: 4rem;
+    max-width: unset;
+  }
+
+  &--success {
+    border-color: var(--color-green);
+    background-color: #f7fcf8;
+
+    & p {
+      color: var(--color-green);
+    }
+  }
+
+  &--error {
+    border-color: var(--color-red);
+    background-color: #fff6f6;
+
+    & p {
+      color: var(--color-red);
+    }
+  }
+
+  &--active {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.text {
+  line-height: 1.4;
+}

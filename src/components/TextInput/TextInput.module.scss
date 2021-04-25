@@ -1,0 +1,19 @@
+.container {
+  padding: 1rem;
+  border: 2px solid var(--color-gray);
+
+  &--focused {
+    border-color: var(--color-dark);
+  }
+}
+
+.input {
+  width: 100%;
+  border: none;
+  font-size: 1.8rem;
+  font-family: inherit;
+
+  &:focus {
+    outline: none;
+  }
+}

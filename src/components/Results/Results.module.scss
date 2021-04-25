@@ -1,0 +1,42 @@
+.wrapper {
+  overflow: auto;
+  margin-bottom: auto;
+  padding-bottom: 2rem;
+}
+
+.table {
+  min-width: 100rem;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000;
+
+  &,
+  th,
+  td {
+    border: 1px solid var(--color-black);
+  }
+
+  & th,
+  td {
+    padding: 1rem;
+  }
+}
+
+.table-header {
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 0 1rem;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.icon {
+  width: 1rem;
+  margin-left: 1rem;
+}

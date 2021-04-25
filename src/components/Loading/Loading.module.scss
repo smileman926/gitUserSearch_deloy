@@ -1,0 +1,43 @@
+@import '../../assets/styles/abstract/mixins';
+
+.loading {
+  position: fixed;
+  bottom: 4rem;
+  left: 4rem;
+  background-color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  color: var(--color-white);
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  transform: translateY(2rem) scale(0.9);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+
+  &--active {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  @include respond(sm) {
+    bottom: unset;
+    top: 5rem;
+    left: 50%;
+    transform: translateY(2rem) translateX(-50%) scale(0.9);
+
+    &--active {
+      transform: translateY(0) translateX(-50%) scale(1);
+    }
+  }
+}
+
+.loading-icon {
+  width: 4rem;
+}
+
+.loading-text {
+  margin-left: 1.5rem;
+}

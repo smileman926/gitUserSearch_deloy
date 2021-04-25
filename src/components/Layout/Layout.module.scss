@@ -1,0 +1,15 @@
+@import '../../assets/styles/abstract/mixins';
+
+.layout {
+  border: 2px solid var(--color-dark);
+  margin: 2rem;
+  min-height: calc(100vh - 4.4rem);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  @include respond(sm) {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}
